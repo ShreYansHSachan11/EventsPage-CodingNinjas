@@ -1,0 +1,26 @@
+<section>
+  
+  <app-header></app-header>
+   <div class="filtertags">
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Filters
+      </button>
+    </p>
+    <div style="min-height: 100px;">
+      <div class="collapse collapse-vertical " id="collapseWidthExample">
+        <div class="card card-body scroll" style="width: 300px; height: 350px;">
+          <div class="tags">
+            <ul>
+              <li *ngFor="let tag of tagList.data.tags"><a href=""> {{tag}}</a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  <app-card-section></app-card-section>
+  
+  <app-footer></app-footer>
+</section>
